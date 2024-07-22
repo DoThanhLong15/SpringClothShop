@@ -1,0 +1,77 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Jul 22, 2024, 10:29:57 PM
+    Author     : LONG
+*/
+
+/* aside */
+aside {
+    height: 100vh;
+}
+aside .top {
+    background-color: var(--clr-white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.4rem;
+}
+aside .logo {
+    display: flex;
+    gap: 1rem;
+}
+aside .top div.close {
+    display: none;
+}
+
+/* side bar */
+aside .sidebar {
+    background-color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    position: relative;
+    top: 1rem;
+}
+aside h3 {
+    font-weight: 500;
+}
+aside .sidebar a {
+    display: flex;
+    color: var(--clr-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    height: 3.2rem;
+    transition: all .1s ease-in;
+}
+aside .sidebar a span {
+    font-size: 1.6rem;
+    transition: all .1s ease-in;
+}
+aside .sidebar a:last-child {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+}
+aside .sidebar a.active {
+    background: var(--clr-light);
+    color: var(--clr-primary);
+    margin-left: 0;
+    border-left: 5px solid var(--clr-primary);
+}
+aside .sidebar a.active:before {
+    content: "";
+    width: 6px;
+    height: 100%;
+    background-color: var(--clr-primary);
+}
+aside .sidebar a:hover {
+    color: var(--clr-primary);
+}
+aside .sidebar a:hover span{
+    margin-left: 1rem;
+    transition: .4s ease;
+}
