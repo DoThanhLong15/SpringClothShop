@@ -1,0 +1,138 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Jul 23, 2024, 3:56:35 PM
+    Author     : LONG
+*/
+
+main {
+    margin-top: 1.4rem;
+    width: auto;
+}
+main input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: var(--clr-dark);
+}
+main .date {
+    display: inline-block;
+    background-color: var(--clr-white);
+    border-radius: var(--border-radius-1);
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem;
+}
+main .insights {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.6rem;
+}
+main .insights > div {
+    background-color: var(--clr-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all .3s ease;
+}
+main .insights > div:hover {
+    box-shadow: none;
+}
+main .insights > div > span {
+    background: coral;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--clr-white);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+main .insights > div.expenses span {
+    background-color: var(--clr-danger);
+}
+main .insights > div.income span {
+    background-color: var(--clr-success);
+}
+main .insights > div .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .insights > div .middle h1 {
+    font-size: 1.6rem;
+}
+main h1 {
+    color: var(--clr-dark);
+}
+main .insights h1 {
+    color: var(--clr-dark);
+}
+main .insights h3 {
+    color: var(--clr-dark);
+}
+main .insights p {
+    color: var(--clr-dark);
+}
+main .insights .last-time {
+    color: var(--clr-dark-variant);
+}
+main .insights .progress {
+    position: relative;
+    height: 68px;
+    width: 68px;
+    border-radius: 50px;
+}
+main .insights .progress svg {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform: rotate(-90deg);
+}
+main .insights .progress svg circle {
+    fill: none;
+    stroke: var(--clr-primary);
+    stroke-width: 5;
+    r: 30;
+    cx: 34;
+    cy: 34;
+}
+main .insights .progress .number {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-dark);
+}
+
+/* ******************
+    MEDIA QUERY
+****************** */
+@media screen and (max-width: 1200px) {
+    
+    main .insights {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* ***********************
+    MEDIA QUERY PHONE
+*********************** */
+@media screen and (max-width: 760px) {
+    main .page-title {
+        margin: 4rem 1rem 1rem;
+    }
+    main .date {
+        margin: 0 1rem;
+    }
+    main .insights {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.6rem;
+        padding: 1rem;
+    }
+}

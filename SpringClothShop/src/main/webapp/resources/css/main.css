@@ -11,8 +11,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 @import url('base/reset.css');
 @import url('base/typography.css');
 
+/* Components */
+@import url('components/table.css');
+
 /* Layouts */
 @import url('layouts/aside.css');
-@import url('layouts/content.css');
 @import url('layouts/grid.css');
 @import url('layouts/right.css');
+
+/* Components */
+@import url('components/profile_photo.css');
+
+/* Pages */
+@import url('pages/home.css');
+
+/* Themes */
+@import url('themes/dark_theme.css');

@@ -14,3 +14,20 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     grid-template-columns: 14rem auto 14rem;
     margin: 0 auto;
 }
+
+/* ******************
+    MEDIA QUERY
+****************** */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 94%;
+        grid-template-columns: 7rem auto 14rem;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .container {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

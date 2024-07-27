@@ -25,10 +25,3 @@ body {
     overflow-x: hidden;
     background: var(--clr-color-background);
 }
-
-.profile-photo {
-    width: 2.8rem;
-    height: 2.8rem;
-    border-radius: 50%;
-    overflow: hidden;
-}

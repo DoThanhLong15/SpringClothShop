@@ -1,0 +1,56 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Jul 26, 2024, 9:54:39 PM
+    Author     : LONG
+*/
+
+main .table-view {
+    margin-top: 2rem;
+}
+main .table-view h1 {
+    color: var(--clr-dark);
+}
+main .table-view table {
+    background-color: var(--clr-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all .3s ease;
+    color: var(--clr-dark);
+}
+main .table-view table:hover {
+    box-shadow: none;
+}
+main table tbody tr {
+    height: 3.8rem;
+    border-bottom: 2px solid var(--clr-dark-variant);
+    color: var(--clr-dark-variant);
+}
+main table tbody td {
+    height: 3.8rem;
+    border-bottom: 2px solid var(--clr-dark-variant);
+}
+main table tbody tr:last-child td {
+    border: none;
+}
+main .table-view a {
+    text-align: center;
+    display: block;
+    margin: 1rem;
+}
+
+main table thead td {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 760px) {
+    main .table-view {
+        margin: 0 auto;
+        padding: 1rem;
+    }
+}

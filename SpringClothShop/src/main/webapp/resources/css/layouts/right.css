@@ -7,3 +7,168 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Author     : LONG
 */
 
+.right {
+    margin-top: 1.4rem;
+}
+.right h2 {
+    color: var(--clr-dark);
+}
+.right .top {
+    display: flex;
+    justify-content: start;
+    gap: 1.5rem;
+}
+.right .top button {
+    display: none;
+}
+.right .theme-toggle {
+    background-color: var(--clr-white);
+    display: flex;
+    justify-content: space-between;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+.right .theme-toggle span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right .theme-toggle span.active {
+    background-color: var(--clr-primary);
+    color: #fff;
+}
+.right .top .profile {
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+}
+.right .info h3 {
+    color: var(--clr-dark);
+}
+.right item h3 {
+    color: var(--clr-dark);
+}
+.right .recent-updates {
+    margin-top: 1rem;
+}
+.right .recent-updates .updates {
+    background-color: var(--clr-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all .3s ease;
+    margin-top: 0.5rem;
+}
+.right .recent-updates .updates:hover {
+    box-shadow: none;
+}
+.right .recent-updates .update {
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.right .sale-analytics {
+    margin-top: 2rem;
+}
+.right .sale-analytics .item {
+    background-color: var(--clr-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    margin-bottom: 0.8rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+}
+.right .sale-analytics .item:hover {
+    box-shadow: none;
+}
+.right .sale-analytics .item .icon {
+    background: coral;
+    padding: 0.6rem;
+    color: var(--clr-white);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    align-items: center;
+}
+.right .sale-analytics .item .icon span {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.right .sale-analytics .item:nth-child(3) .icon {
+    background-color: var(--clr-success);
+}
+.right .sale-analytics .item:nth-child(4) .icon {
+    background-color: var(--clr-danger);
+}
+.right .add-product div {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed;
+    color: var(--clr-dark-variant);
+    margin: 2rem 0;
+}
+
+/* ******************
+    MEDIA QUERY
+****************** */
+@media screen and (max-width: 1200px) {
+    
+}
+
+/* ***********************
+    MEDIA QUERY PHONE
+*********************** */
+@media screen and (max-width: 760px) {
+    .right .top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: var(--clr-white);
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--box-shadow);
+        margin: 0;
+        height: 4.6rem;
+    }
+    .right .profile {
+        position: absolute;
+        left: 60%;
+    }
+    .right .recent-updates, .right .sale-analytics,.right .add-product {
+        padding: 1rem;
+    }
+/*    .right .sale-analytics {
+        padding: 30px;
+    }
+    .right .add-product {
+        padding: 30px;
+    }*/
+    .right .top button {
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--clr-dark);
+        position: absolute;
+        left: 1rem;
+    }   
+}

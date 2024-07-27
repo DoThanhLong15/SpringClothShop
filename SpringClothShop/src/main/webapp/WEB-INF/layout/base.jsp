@@ -21,10 +21,12 @@
     <body>
         <div class="container">
             <tiles:insertAttribute name="aside" />
-            
+
             <tiles:insertAttribute name="content" />
-            
+
             <tiles:insertAttribute name="right" />
         </div>
+
+        <script src="<c:url value="/js/utils/change_theme.js" />"></script>
     </body>
 </html>
